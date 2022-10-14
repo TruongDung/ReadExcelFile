@@ -13,6 +13,7 @@ var stringList = new List<string>();
 for (int i = 1; i <= rows; i++)
 {
     Console.Write("\r\n");
+    // try to get the 2nd column of excel sheet 1
     for (int j = 2; j <= 2; j++)
     {
         if (excelRange.Cells[i, j] != null && excelRange.Cells[i, j].Value2 != null)
