@@ -2,8 +2,8 @@ using ExcelApp = Microsoft.Office.Interop.Excel;
 
 ExcelApp.Application excelApp = new ExcelApp.Application();
 
-ExcelApp.Workbook excelBook = excelApp.Workbooks.Open(@"D:\Copy of 52874 (004).xlsx");
-ExcelApp._Worksheet excelSheet = excelBook.Sheets[1];
+ExcelApp.Workbook excelBook = excelApp.Workbooks.Open(@"D:\Copy of 52874 (004).xlsx"); // get the path of Excel file
+ExcelApp._Worksheet excelSheet = excelBook.Sheets[1]; // get the sheet 1
 ExcelApp.Range excelRange = excelSheet.UsedRange;
 
 int rows = excelRange.Rows.Count;
